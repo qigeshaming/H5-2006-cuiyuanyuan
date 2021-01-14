@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+  
+ <link rel="stylesheet" href="./css/register.css">
+</head>
+<body>
+
+  <div class="info userinfo container">
+    <div class="panel panel-success">
+      <div class="panel-body">
+         
+        <form class="col-sm-11" action="./server/register.php" method="post">
+          <div class="form-group">
+            <label for="username">用户名: </label>
+            <input type="text" class="form-control" autocomplete="off" id="username" placeholder="请填写用户名">
+          </div>
+          <div class="form-group">
+            <label for="password">密 码: </label>
+            <input type="text" class="form-control" autocomplete="off" id="password" placeholder="请填写密码">
+          </div> 
+          <div class="form-group">
+            <label for="nickname">昵称: </label>
+            <input type="text" class="form-control" autocomplete="off" id="nickname" placeholder="请填写昵称">
+          </div>
+          <button type="submit" class="register btn btn-success col-sm-5">注册</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/jquery/jquery.min.js"></script>
+  <script src="./js/public.js"></script>
+  <script src="./js/register.js"></script>
+</body>
+</html>
